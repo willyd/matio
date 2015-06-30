@@ -2,7 +2,7 @@ add_executable(test_mat test_mat.c)
 target_link_libraries(test_mat matio ${GETOPT_LIB})
 
 add_executable(test_snprintf test_snprintf.c ${MATIO_SOURCE_DIR}/src/snprintf.c)
-target_link_libraries(test_snprintf ${GETOPT_LIB} m)
+target_link_libraries(test_snprintf ${GETOPT_LIB})
 
 option(MATLAB_TESTING "Enable matlab read tests (requires a function matlab)" ON)
 if (MATLAB_TESTING)
